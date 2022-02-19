@@ -192,7 +192,6 @@
     "unicorn/error-message": "error",
     "unicorn/escape-case": "error",
     "unicorn/new-for-builtins": "error",
-    "unicorn/no-array-callback-reference": "error",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-this-assignment": "error",
