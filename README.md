@@ -1,0 +1,127 @@
+<h1 align="center">eslint-config-conventions</h1>
+
+<p align="center">
+  <strong><a href="https://eslint.org/docs/developer-guide/shareable-configs">ESLint shareable config</a> to enforce strict conventions and good code quality.</strong>
+</p>
+
+</p>
+
+<p align="center">
+  <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" /></a>
+  <a href="./LICENSE"><img src="https://img.shields.io/badge/licence-MIT-blue.svg" alt="Licence MIT"/></a>
+  <a href="./CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
+  <br />
+  <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/build.yml"><img src="https://github.com/Divlo/eslint-config-conventions/build.yml/badge.svg?branch=develop" /></a>
+  <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/lint.yml"><img src="https://github.com/Divlo/eslint-config-conventions/actions/workflows/lint.yml/badge.svg?branch=develop" /></a>
+  <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/test.yml"><img src="https://github.com/Divlo/eslint-config-conventions/actions/workflows/test.yml/badge.svg?branch=develop" /></a>
+  <br />
+  <a href="https://conventionalcommits.org"><img src="https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg" alt="Conventional Commits" /></a>
+  <a href="https://github.com/semantic-release/semantic-release"><img src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg" alt="semantic-release" /></a>
+  <a href="https://www.npmjs.com/package/eslint-config-conventions"><img src="https://img.shields.io/npm/v/eslint-config-conventions.svg" alt="npm version"></a>
+</p>
+
+## 📜 About
+
+**eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality, it is highly inspired from [eslint-config-standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript) but it is **stricter** and with **no formatting rules**, **only code-quality rules**.
+
+This configuration is mostly **for catching bugs** and **code-quality** so it is recommanded to use it with [Prettier](https://prettier.io/) for a consistent code style, it works with any `.prettierrc.json` configuration.
+
+More information about **formatting rules** vs **code-quality rules** can be found on [Prettier vs. Linters](https://prettier.io/docs/en/comparison.html).
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) >= 16.0.0
+
+### Installation
+
+`npm@<7` does not automatically install `peerDependencies`, so if that's what you're using, install them manually.
+Here is an example, but use it only for reference, because your decisions regarding version ranges and range specifiers may vary.
+
+```sh
+npm install --save-dev \
+  eslint@^8.9.0 \
+  eslint-plugin-import@^2.25.4 \
+  eslint-plugin-promise@^6.0.0 \
+  eslint-plugin-unicorn@^41.0.0 \
+  typescript@^4.4.0 \
+  @typescript-eslint/eslint-plugin@^5.12.0 \
+  eslint-config-conventions@latest
+```
+
+Yes, this is a large number of packages. This is due to [a known limitation in ESLint](https://github.com/eslint/eslint/issues/3458).
+
+This list of dependencies are:
+
+- [ESLint](https://github.com/eslint/eslint)
+- 3 [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
+  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
+  - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
+  - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- [TypeScript](https://github.com/Microsoft/TypeScript)
+- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint); ESLint rules for TypeScript.
+- This package: `eslint-config-conventions`
+
+### Configuration with [Prettier](https://prettier.io/) (recommended)
+
+You will need to install some dependencies in addition to those required:
+
+```sh
+npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+
+# Create an empty config file to let editors and other tools know you are using Prettier
+# You can personalize it with your own rules
+echo {}> .prettierrc.json
+```
+
+#### `.eslintrc.json`
+
+```json
+{
+  "extends": ["conventions", "prettier"],
+  "plugins": ["prettier"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}
+```
+
+**Note:** Please read some important instructions regarding the `project` option [here](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration).
+
+You must have a valid `tsconfig.json` file to specify `"parserOptions.project"`.
+
+#### `package.json`
+
+```jsonc
+{
+  "scripts": {
+    "lint:typescript": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-path \".gitignore\"",
+    "lint:prettier": "prettier \".\" --check --ignore-path \".gitignore\""
+  }
+}
+```
+
+### Usage
+
+```sh
+npm run lint:typescript
+# or to apply automatic fixes to code
+npm run lint:typescript -- --fix
+
+# Validate code formatting in all supported languages by Prettier
+npm run lint:prettier
+```
+
+## 💡 Contributing
+
+Anyone can help to improve the project, submit a Feature Request, a bug report or even correct a simple spelling mistake.
+
+The steps to contribute can be found in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
+
+## 📄 License
+
+[MIT](./LICENSE)
