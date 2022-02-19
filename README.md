@@ -11,7 +11,6 @@
   <a href="./LICENSE"><img src="https://img.shields.io/badge/licence-MIT-blue.svg" alt="Licence MIT"/></a>
   <a href="./CODE_OF_CONDUCT.md"><img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" /></a>
   <br />
-  <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/build.yml"><img src="https://github.com/Divlo/eslint-config-conventions/build.yml/badge.svg?branch=develop" /></a>
   <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/lint.yml"><img src="https://github.com/Divlo/eslint-config-conventions/actions/workflows/lint.yml/badge.svg?branch=develop" /></a>
   <a href="https://github.com/Divlo/eslint-config-conventions/actions/workflows/test.yml"><img src="https://github.com/Divlo/eslint-config-conventions/actions/workflows/test.yml/badge.svg?branch=develop" /></a>
   <br />
