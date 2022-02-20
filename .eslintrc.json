@@ -1,19 +1,17 @@
 {
   "root": true,
-  "plugins": ["@typescript-eslint", "import", "promise", "unicorn"],
+  "plugins": ["import", "promise", "unicorn"],
   "env": {
     "browser": true,
     "node": true,
     "es2022": true
   },
-  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
-    },
-    "project": "./tsconfig.json"
+    }
   },
   "rules": {
     "constructor-super": "error",
@@ -29,13 +27,11 @@
     "no-control-regex": "error",
     "no-debugger": "error",
     "no-dupe-args": "error",
-    "no-dupe-class-members": "off",
-    "@typescript-eslint/no-dupe-class-members": "error",
+    "no-dupe-class-members": "error",
     "no-dupe-else-if": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
-    "no-duplicate-imports": "off",
-    "@typescript-eslint/no-duplicate-imports": "error",
+    "no-duplicate-imports": "error",
     "no-empty-character-class": "error",
     "no-empty-pattern": "error",
     "no-ex-assign": "error",
@@ -44,8 +40,7 @@
     "no-import-assign": "error",
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
-    "no-loss-of-precision": "off",
-    "@typescript-eslint/no-loss-of-precision": "error",
+    "no-loss-of-precision": "error",
     "no-misleading-character-class": "error",
     "no-new-symbol": "error",
     "no-obj-calls": "error",
@@ -64,17 +59,13 @@
     "no-unsafe-negation": "error",
     "no-unsafe-optional-chaining": "error",
     "no-unused-private-class-members": "error",
-    "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "error",
-    "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": [
+    "no-unused-vars": "error",
+    "no-use-before-define": [
       "error",
       {
         "functions": false,
         "classes": false,
-        "enums": false,
-        "variables": false,
-        "typedefs": false
+        "variables": false
       }
     ],
     "no-useless-backreference": "error",
@@ -88,19 +79,16 @@
     "valid-typeof": ["error", { "requireStringLiterals": true }],
 
     "consistent-this": "error",
-    "default-param-last": "off",
-    "@typescript-eslint/default-param-last": "error",
+    "default-param-last": "error",
     "default-case-last": "error",
-    "dot-notation": "off",
-    "@typescript-eslint/dot-notation": ["error", { "allowKeywords": true }],
+    "dot-notation": ["error", { "allowKeywords": true }],
     "eqeqeq": ["error", "always", { "null": "ignore" }],
     "grouped-accessor-pairs": "error",
     "new-cap": [
       "error",
       { "newIsCap": true, "capIsNew": false, "properties": true }
     ],
-    "no-array-constructor": "off",
-    "@typescript-eslint/no-array-constructor": "error",
+    "no-array-constructor": "error",
     "no-caller": "error",
     "no-confusing-arrow": "error",
     "no-delete-var": "error",
@@ -108,8 +96,7 @@
     "no-eval": "error",
     "no-floating-decimal": "error",
     "no-global-assign": "error",
-    "no-implied-eval": "off",
-    "@typescript-eslint/no-implied-eval": "error",
+    "no-implied-eval": "error",
     "no-mixed-operators": [
       "error",
       {
@@ -127,15 +114,12 @@
     "no-octal": "error",
     "no-octal-escape": "error",
     "no-proto": "error",
-    "no-redeclare": "off",
-    "@typescript-eslint/no-redeclare": ["error", { "builtinGlobals": false }],
+    "no-redeclare": ["error", { "builtinGlobals": false }],
     "no-regex-spaces": "error",
     "no-shadow-restricted-names": "error",
-    "no-throw-literal": "off",
-    "@typescript-eslint/no-throw-literal": "error",
+    "no-throw-literal": "error",
     "no-undef-init": "error",
-    "no-unused-expressions": "off",
-    "@typescript-eslint/no-unused-expressions": [
+    "no-unused-expressions": [
       "error",
       {
         "allowShortCircuit": true,
@@ -145,8 +129,7 @@
     ],
     "no-useless-call": "error",
     "no-useless-computed-key": "error",
-    "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "error",
+    "no-useless-constructor": "error",
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
@@ -161,8 +144,7 @@
     "prefer-regex-literals": ["error", { "disallowRedundantWrapping": true }],
     "quote-props": ["error", "as-needed"],
     "radix": "error",
-    "require-await": "off",
-    "@typescript-eslint/require-await": "error",
+    "require-await": "error",
     "yoda": ["error", "never"],
 
     "import/no-absolute-path": "error",
@@ -200,8 +182,57 @@
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
       "rules": {
         "no-undef": "off",
+        "no-dupe-class-members": "off",
+        "@typescript-eslint/no-dupe-class-members": "error",
+        "no-duplicate-imports": "off",
+        "@typescript-eslint/no-duplicate-imports": "error",
+        "no-loss-of-precision": "off",
+        "@typescript-eslint/no-loss-of-precision": "error",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+          "error",
+          {
+            "functions": false,
+            "classes": false,
+            "enums": false,
+            "variables": false,
+            "typedefs": false
+          }
+        ],
+        "default-param-last": "off",
+        "@typescript-eslint/default-param-last": "error",
+        "dot-notation": "off",
+        "@typescript-eslint/dot-notation": ["error", { "allowKeywords": true }],
+        "no-array-constructor": "off",
+        "@typescript-eslint/no-array-constructor": "error",
+        "no-implied-eval": "off",
+        "@typescript-eslint/no-implied-eval": "error",
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": [
+          "error",
+          { "builtinGlobals": false }
+        ],
+        "no-throw-literal": "off",
+        "@typescript-eslint/no-throw-literal": "error",
+        "no-unused-expressions": "off",
+        "@typescript-eslint/no-unused-expressions": [
+          "error",
+          {
+            "allowShortCircuit": true,
+            "allowTernary": true,
+            "allowTaggedTemplates": true
+          }
+        ],
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "require-await": "off",
+        "@typescript-eslint/require-await": "error",
 
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/await-thenable": "error",

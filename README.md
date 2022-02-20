@@ -21,7 +21,7 @@
 
 ## 📜 About
 
-**eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality, it is highly inspired from [eslint-config-standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript) but it is **stricter** and with **no formatting rules**, **only code-quality rules**.
+**eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality, it is highly inspired from [eslint-config-standard-with-typescript](https://github.com/standard/eslint-config-standard-with-typescript) but it is **stricter** and with **no formatting rules**, **only code-quality rules**. It supports both **JavaScript** and **TypeScript**.
 
 This configuration is mostly **for catching bugs** and **code-quality** so it is recommanded to use it with [Prettier](https://prettier.io/) for a consistent code style, it works with any `.prettierrc.json` configuration.
 
@@ -44,8 +44,6 @@ npm install --save-dev \
   eslint-plugin-import@^2.25.4 \
   eslint-plugin-promise@^6.0.0 \
   eslint-plugin-unicorn@^41.0.0 \
-  typescript@^4.4.0 \
-  @typescript-eslint/eslint-plugin@^5.12.0 \
   eslint-config-conventions@latest
 ```
 
@@ -58,9 +56,22 @@ This list of dependencies are:
   - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+- This package: `eslint-config-conventions`
+
+If you want to use **TypeScript**, you also need to install:
+
+```sh
+npm install --save-dev \
+  typescript@^4.4.0 \
+  @typescript-eslint/eslint-plugin@^5.12.0 \
+  @typescript-eslint/parser@^5.12.0
+```
+
+Dependencies are:
+
 - [TypeScript](https://github.com/Microsoft/TypeScript)
 - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint); ESLint rules for TypeScript.
-- This package: `eslint-config-conventions`
+- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint); ESLint parser for TypeScript.
 
 ### Configuration with [Prettier](https://prettier.io/) (recommended)
 
@@ -91,7 +102,7 @@ echo {}> .prettierrc.json
 
 **Note:** Please read some important instructions regarding the `project` option [here](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration).
 
-You must have a valid `tsconfig.json` file to specify `"parserOptions.project"`.
+`"parserOptions.project"` is only required if you use **TypeScript**.
 
 #### `package.json`
 

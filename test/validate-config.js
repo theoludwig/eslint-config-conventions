@@ -1,8 +1,13 @@
 const { ESLint } = require('eslint')
 const test = require('tape')
 
+const eslint = new ESLint({
+  ignore: false,
+  useEslintrc: false,
+  overrideConfigFile: 'eslintrc.json'
+})
+
 test('ensure we validate correctly JavaScript files', async (t) => {
-  const eslint = new ESLint({ ignore: false })
   const [noErrors] = await eslint.lintFiles(
     'test/fixtures/javascript-no-errors.js'
   )
@@ -15,7 +20,6 @@ test('ensure we validate correctly JavaScript files', async (t) => {
 })
 
 test('ensure we validate correctly TypeScript files', async (t) => {
-  const eslint = new ESLint({ ignore: false })
   const [noErrors] = await eslint.lintFiles(
     'test/fixtures/typescript-no-errors.ts'
   )
@@ -28,7 +32,6 @@ test('ensure we validate correctly TypeScript files', async (t) => {
 })
 
 test('ensure we allow top-level await', async (t) => {
-  const eslint = new ESLint({ ignore: false })
   const [lintResult] = await eslint.lintFiles(
     'test/fixtures/top-level-await.mjs'
   )
