@@ -34,7 +34,7 @@
     "lint:javascript": "eslint \"**/*.{js,jsx,ts,tsx}\" -c \"eslintrc.json\"",
     "lint:prettier": "prettier \".\" --check --ignore-path \".gitignore\"",
     "lint:staged": "lint-staged",
-    "test": "tape \"test/**/*.js\"",
+    "test": "tap",
     "release": "semantic-release",
     "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
@@ -49,22 +49,22 @@
   "devDependencies": {
     "@commitlint/cli": "16.2.3",
     "@commitlint/config-conventional": "16.2.1",
+    "@types/eslint": "8.4.1",
+    "@types/tap": "15.0.6",
+    "@typescript-eslint/eslint-plugin": "5.15.0",
+    "@typescript-eslint/parser": "5.15.0",
     "editorconfig-checker": "4.0.2",
     "eslint": "8.11.0",
-    "@types/eslint": "8.4.1",
     "eslint-plugin-import": "2.25.4",
     "eslint-plugin-promise": "6.0.0",
     "eslint-plugin-unicorn": "41.0.1",
-    "typescript": "4.6.2",
-    "@typescript-eslint/parser": "5.15.0",
-    "@typescript-eslint/eslint-plugin": "5.15.0",
-    "tape": "5.5.2",
     "husky": "7.0.4",
     "lint-staged": "12.3.7",
     "markdownlint-cli": "0.31.1",
-    "@types/tape": "4.13.2",
     "pinst": "3.0.0",
     "prettier": "2.6.0",
-    "semantic-release": "19.0.2"
+    "semantic-release": "19.0.2",
+    "tap": "16.0.0",
+    "typescript": "4.6.2"
   }
 }
