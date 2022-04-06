@@ -41,9 +41,9 @@ Here is an example, but use it only for reference, because your decisions regard
 ```sh
 npm install --save-dev \
   eslint@^8.9.0 \
-  eslint-plugin-import@^2.25.4 \
+  eslint-plugin-import@^2.26.0 \
   eslint-plugin-promise@^6.0.0 \
-  eslint-plugin-unicorn@^41.0.0 \
+  eslint-plugin-unicorn@^42.0.0 \
   eslint-config-conventions@latest
 ```
 
@@ -62,9 +62,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  typescript@^4.4.0 \
-  @typescript-eslint/eslint-plugin@^5.12.0 \
-  @typescript-eslint/parser@^5.12.0
+  typescript@^4.6.0 \
+  @typescript-eslint/eslint-plugin@^5.18.0 \
+  @typescript-eslint/parser@^5.18.0
 ```
 
 Dependencies are:
