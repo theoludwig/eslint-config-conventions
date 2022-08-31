@@ -23,6 +23,10 @@
     "conventions"
   ],
   "main": "index.js",
+  "files": [
+    "index.js",
+    ".eslintrc.json"
+  ],
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8.0.0"
