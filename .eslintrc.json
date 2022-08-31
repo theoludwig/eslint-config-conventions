@@ -147,6 +147,7 @@
     "yoda": ["error", "never"],
     "curly": ["error", "all"],
     "arrow-parens": ["error", "always"],
+    "arrow-body-style": ["error", "always"],
 
     "import/no-absolute-path": "error",
     "import/no-webpack-loader-syntax": "error",
