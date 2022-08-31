@@ -1,3 +1,3 @@
 const foo = await 1
-const bar = function () {}
+const bar = () => {}
 await bar(foo)
