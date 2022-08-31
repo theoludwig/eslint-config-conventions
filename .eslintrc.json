@@ -145,6 +145,7 @@
     "quote-props": ["error", "as-needed"],
     "radix": "error",
     "yoda": ["error", "never"],
+    "curly": ["error", "all"],
 
     "import/no-absolute-path": "error",
     "import/no-webpack-loader-syntax": "error",
