@@ -146,6 +146,7 @@
     "radix": "error",
     "yoda": ["error", "never"],
     "curly": ["error", "all"],
+    "func-style": ["error", "expression"],
     "arrow-parens": ["error", "always"],
     "arrow-body-style": ["error", "always"],
 
