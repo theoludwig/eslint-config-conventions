@@ -181,7 +181,8 @@
     "unicorn/no-this-assignment": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/prefer-node-protocol": "error",
-    "unicorn/throw-new-error": "error"
+    "unicorn/throw-new-error": "error",
+    "unicorn/no-typeof-undefined": "error"
   },
   "overrides": [
     {
