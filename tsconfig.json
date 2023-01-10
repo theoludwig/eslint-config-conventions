@@ -1,12 +1,10 @@
 {
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "target": "ESNext",
     "module": "commonjs",
     "lib": ["ESNext"],
     "moduleResolution": "node",
-    "rootDir": "./",
-    "strict": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true
+    "rootDir": "./"
   }
 }

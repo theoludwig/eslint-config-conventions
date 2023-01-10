@@ -109,7 +109,7 @@ echo {}> .prettierrc.json
 ```jsonc
 {
   "scripts": {
-    "lint:typescript": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-path \".gitignore\"",
+    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-path \".gitignore\"",
     "lint:prettier": "prettier \".\" --check --ignore-path \".gitignore\""
   }
 }
@@ -118,9 +118,9 @@ echo {}> .prettierrc.json
 ### Usage
 
 ```sh
-npm run lint:typescript
+npm run lint:eslint
 # or to apply automatic fixes to code
-npm run lint:typescript -- --fix
+npm run lint:eslint -- --fix
 
 # Validate code formatting in all supported languages by Prettier
 npm run lint:prettier
