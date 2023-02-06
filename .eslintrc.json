@@ -34,6 +34,7 @@
     "no-duplicate-imports": "error",
     "no-empty-character-class": "error",
     "no-empty-pattern": "error",
+    "no-empty-static-block": "error",
     "no-ex-assign": "error",
     "no-fallthrough": "error",
     "no-func-assign": "error",
