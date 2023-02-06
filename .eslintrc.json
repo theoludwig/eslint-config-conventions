@@ -248,6 +248,7 @@
           "error",
           { "default": "array-simple" }
         ],
+        "@typescript-eslint/ban-types": "error",
         "@typescript-eslint/consistent-type-definitions": [
           "error",
           "interface"
