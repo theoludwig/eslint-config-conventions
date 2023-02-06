@@ -40,10 +40,10 @@ Here is an example, but use it only for reference, because your decisions regard
 
 ```sh
 npm install --save-dev \
-  eslint@^8.9.0 \
-  eslint-plugin-import@^2.26.0 \
-  eslint-plugin-promise@^6.0.0 \
-  eslint-plugin-unicorn@^45.0.0 \
+  eslint@^8.33.0 \
+  eslint-plugin-import@^2.27.5 \
+  eslint-plugin-promise@^6.1.1 \
+  eslint-plugin-unicorn@^45.0.2 \
   eslint-config-conventions@latest
 ```
 
