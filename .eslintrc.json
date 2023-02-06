@@ -168,6 +168,7 @@
       }
     ],
     "import/no-named-default": "error",
+    "import/no-empty-named-blocks": "error",
 
     "promise/param-names": "error",
     "promise/no-new-statics": "error",
