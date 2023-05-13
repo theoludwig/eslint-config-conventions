@@ -7,20 +7,28 @@ on:
 jobs:
   release:
     runs-on: 'ubuntu-latest'
+    permissions:
+      contents: 'write'
+      issues: 'write'
+      pull-requests: 'write'
+      id-token: 'write'
     steps:
       - uses: 'actions/checkout@v3.5.2'
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: 'Use Node.js'
+      - name: 'Setup Node.js'
         uses: 'actions/setup-node@v3.6.0'
         with:
           node-version: 'lts/*'
           cache: 'npm'
 
-      - name: 'Install'
-        run: 'npm install'
+      - name: 'Install dependencies'
+        run: 'npm clean-install'
+
+      - name: 'Verify the integrity of provenance attestations and registry signatures for installed dependencies'
+        run: 'npm audit signatures'
 
       - name: 'Release'
         run: 'npm run release'

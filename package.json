@@ -27,9 +27,13 @@
     "index.js",
     ".eslintrc.json"
   ],
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "engines": {
     "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "npm": ">=9.0.0"
   },
   "scripts": {
     "lint:commit": "commitlint",
