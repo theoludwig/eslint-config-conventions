@@ -19,7 +19,7 @@ All work on **eslint-config-conventions** happens directly on this repository. B
 
 ## Pull Requests
 
-- **Please first discuss** the change you wish to make via [issue](https://github.com/Divlo/eslint-config-conventions/issues) before making a change. It might avoid a waste of your time.
+- **Please first discuss** the change you wish to make via [issue](https://github.com/theoludwig/eslint-config-conventions/issues) before making a change. It might avoid a waste of your time.
 
 - Ensure your code respect linting.
 

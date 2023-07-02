@@ -3,16 +3,16 @@
   "version": "0.0.0-development",
   "public": true,
   "description": "ESLint shareable config to enforce strict conventions and good code quality.",
-  "author": "Divlo <contact@divlo.fr>",
+  "author": "Théo LUDWIG <contact@theoludwig.fr>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Divlo/eslint-config-conventions.git"
+    "url": "https://github.com/theoludwig/eslint-config-conventions.git"
   },
   "bugs": {
-    "url": "https://github.com/Divlo/eslint-config-conventions/issues"
+    "url": "https://github.com/theoludwig/eslint-config-conventions/issues"
   },
-  "homepage": "https://github.com/Divlo/eslint-config-conventions#readme",
+  "homepage": "https://github.com/theoludwig/eslint-config-conventions#readme",
   "keywords": [
     "eslintconfig",
     "eslint",
