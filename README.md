@@ -35,9 +35,6 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ### Installation
 
-`npm@<7` does not automatically install `peerDependencies`, so if that's what you're using, install them manually.
-Here is an example, but use it only for reference, because your decisions regarding version ranges and range specifiers may vary.
-
 ```sh
 npm install --save-dev \
   eslint@^8.44.0 \
@@ -47,7 +44,7 @@ npm install --save-dev \
   eslint-config-conventions@latest
 ```
 
-Yes, this is a large number of packages. This is due to [a known limitation in ESLint](https://github.com/eslint/eslint/issues/3458).
+This is a large number of packages due to [a known limitation in ESLint](https://github.com/eslint/eslint/issues/3458).
 
 This list of dependencies are:
 
@@ -63,15 +60,15 @@ If you want to use **TypeScript**, you also need to install:
 ```sh
 npm install --save-dev \
   typescript@^5.0.4 \
-  @typescript-eslint/eslint-plugin@^5.59.5 \
-  @typescript-eslint/parser@^5.59.5
+  @typescript-eslint/eslint-plugin@^5.60.1 \
+  @typescript-eslint/parser@^5.60.1
 ```
 
 Dependencies are:
 
 - [TypeScript](https://github.com/Microsoft/TypeScript)
-- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint); ESLint rules for TypeScript.
-- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint); ESLint parser for TypeScript.
+- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint): ESLint rules for TypeScript.
+- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint): ESLint parser for TypeScript.
 
 ### Configuration with [Prettier](https://prettier.io/) (recommended)
 
@@ -82,7 +79,7 @@ npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
 
 # Create an empty config file to let editors and other tools know you are using Prettier
 # You can personalize it with your own rules
-echo {}> .prettierrc.json
+echo "{}" > .prettierrc.json
 ```
 
 #### `.eslintrc.json`
@@ -109,8 +106,8 @@ echo {}> .prettierrc.json
 ```jsonc
 {
   "scripts": {
-    "lint:eslint": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-path \".gitignore\"",
-    "lint:prettier": "prettier \".\" --check --ignore-path \".gitignore\""
+    "lint:eslint": "eslint . --ignore-path .gitignore",
+    "lint:prettier": "prettier . --check --ignore-path .gitignore"
   }
 }
 ```
