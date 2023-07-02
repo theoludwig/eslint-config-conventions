@@ -1,5 +1,7 @@
+const test = require('node:test')
+const assert = require('node:assert/strict')
+
 const { ESLint } = require('eslint')
-const tap = require('tap')
 
 const eslint = new ESLint({
   ignore: false,
@@ -7,31 +9,31 @@ const eslint = new ESLint({
   overrideConfigFile: 'eslintrc.json'
 })
 
-tap.test('ensure we validate correctly JavaScript files', async (t) => {
+test('ensure we validate correctly JavaScript files', async () => {
   const [noErrors] = await eslint.lintFiles(
     'test/fixtures/javascript-no-errors.js'
   )
   const [withErrors] = await eslint.lintFiles(
     'test/fixtures/javascript-with-errors.js'
   )
-  t.equal(noErrors.errorCount, 0)
-  t.equal(withErrors.errorCount, 3)
+  assert.strictEqual(noErrors?.errorCount, 0)
+  assert.strictEqual(withErrors?.errorCount, 3)
 })
 
-tap.test('ensure we validate correctly TypeScript files', async (t) => {
+test('ensure we validate correctly TypeScript files', async () => {
   const [noErrors] = await eslint.lintFiles(
     'test/fixtures/typescript-no-errors.ts'
   )
   const [withErrors] = await eslint.lintFiles(
     'test/fixtures/javascript-with-errors.js'
   )
-  t.equal(noErrors.errorCount, 0)
-  t.equal(withErrors.errorCount, 3)
+  assert.strictEqual(noErrors?.errorCount, 0)
+  assert.strictEqual(withErrors?.errorCount, 3)
 })
 
-tap.test('ensure we allow top-level await', async (t) => {
+test('ensure we allow top-level await', async () => {
   const [lintResult] = await eslint.lintFiles(
     'test/fixtures/top-level-await.mjs'
   )
-  t.equal(lintResult.errorCount, 0)
+  assert.strictEqual(lintResult?.errorCount, 0)
 })
