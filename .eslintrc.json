@@ -4,10 +4,10 @@
   "env": {
     "browser": true,
     "node": true,
-    "es2022": true
+    "es2024": true
   },
   "parserOptions": {
-    "ecmaVersion": 2022,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true

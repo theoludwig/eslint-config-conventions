@@ -40,7 +40,7 @@ Here is an example, but use it only for reference, because your decisions regard
 
 ```sh
 npm install --save-dev \
-  eslint@^8.33.0 \
+  eslint@^8.44.0 \
   eslint-plugin-import@^2.27.5 \
   eslint-plugin-promise@^6.1.1 \
   eslint-plugin-unicorn@^47.0.0 \
