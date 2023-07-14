@@ -59,9 +59,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  typescript@^5.0.4 \
-  @typescript-eslint/eslint-plugin@^5.60.1 \
-  @typescript-eslint/parser@^5.60.1
+  typescript@^5.1.6 \
+  @typescript-eslint/eslint-plugin@^6.0.0 \
+  @typescript-eslint/parser@^6.0.0
 ```
 
 Dependencies are:
@@ -107,7 +107,7 @@ echo "{}" > .prettierrc.json
 {
   "scripts": {
     "lint:eslint": "eslint . --ignore-path .gitignore",
-    "lint:prettier": "prettier . --check --ignore-path .gitignore"
+    "lint:prettier": "prettier . --check"
   }
 }
 ```

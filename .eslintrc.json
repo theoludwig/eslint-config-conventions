@@ -196,8 +196,6 @@
         "no-undef": "off",
         "no-dupe-class-members": "off",
         "@typescript-eslint/no-dupe-class-members": "error",
-        "no-duplicate-imports": "off",
-        "@typescript-eslint/no-duplicate-imports": "error",
         "no-loss-of-precision": "off",
         "@typescript-eslint/no-loss-of-precision": "error",
         "no-unused-vars": "off",
@@ -319,7 +317,7 @@
         ],
         "@typescript-eslint/restrict-plus-operands": [
           "error",
-          { "checkCompoundAssignments": true }
+          { "skipCompoundAssignments": true }
         ],
         "@typescript-eslint/restrict-template-expressions": [
           "error",
