@@ -198,7 +198,8 @@
     "unicorn/prefer-node-protocol": "error",
     "unicorn/throw-new-error": "error",
     "unicorn/no-typeof-undefined": "error",
-    "unicorn/require-array-join-separator": "error"
+    "unicorn/require-array-join-separator": "error",
+    "unicorn/prefer-number-properties": "error"
   },
   "overrides": [
     {
