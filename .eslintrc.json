@@ -197,7 +197,8 @@
     "unicorn/number-literal-case": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/throw-new-error": "error",
-    "unicorn/no-typeof-undefined": "error"
+    "unicorn/no-typeof-undefined": "error",
+    "unicorn/require-array-join-separator": "error"
   },
   "overrides": [
     {
