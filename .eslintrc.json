@@ -320,6 +320,7 @@
         "@typescript-eslint/prefer-nullish-coalescing": [
           "error",
           {
+            "ignoreTernaryTests": true,
             "ignoreConditionalTests": false,
             "ignoreMixedLogicalExpressions": false
           }
