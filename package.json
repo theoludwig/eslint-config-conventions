@@ -39,7 +39,7 @@
     "lint:commit": "commitlint",
     "lint:editorconfig": "editorconfig-checker",
     "lint:markdown": "markdownlint-cli2",
-    "lint:eslint": "eslint . -c eslintrc.json",
+    "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives --config eslintrc.json",
     "lint:prettier": "prettier . --check",
     "lint:staged": "lint-staged",
     "test": "node --test test/",

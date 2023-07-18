@@ -86,6 +86,7 @@ echo "{}" > .prettierrc.json
 {
   "extends": ["conventions", "prettier"],
   "plugins": ["prettier"],
+  "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "project": "./tsconfig.json"
   },
@@ -104,7 +105,7 @@ echo "{}" > .prettierrc.json
 ```jsonc
 {
   "scripts": {
-    "lint:eslint": "eslint . --ignore-path .gitignore",
+    "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives --ignore-path .gitignore",
     "lint:prettier": "prettier . --check"
   }
 }
