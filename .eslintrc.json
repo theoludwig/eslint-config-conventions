@@ -182,6 +182,7 @@
     "unicorn/escape-case": "error",
     "unicorn/explicit-length-check": "error",
     "unicorn/new-for-builtins": "error",
+    "unicorn/no-array-callback-reference": "error",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-this-assignment": "error",
