@@ -40,11 +40,9 @@ npm install --save-dev \
   eslint@^8.44.0 \
   eslint-plugin-import@^2.27.5 \
   eslint-plugin-promise@^6.1.1 \
-  eslint-plugin-unicorn@^47.0.0 \
+  eslint-plugin-unicorn@^48.0.0 \
   eslint-config-conventions@latest
 ```
-
-This is a large number of packages due to [a known limitation in ESLint](https://github.com/eslint/eslint/issues/3458).
 
 This list of dependencies are:
 
@@ -60,8 +58,8 @@ If you want to use **TypeScript**, you also need to install:
 ```sh
 npm install --save-dev \
   typescript@^5.1.6 \
-  @typescript-eslint/eslint-plugin@^6.0.0 \
-  @typescript-eslint/parser@^6.0.0
+  @typescript-eslint/eslint-plugin@^6.1.0 \
+  @typescript-eslint/parser@^6.1.0
 ```
 
 Dependencies are:
