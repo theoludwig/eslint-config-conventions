@@ -190,6 +190,7 @@
     "unicorn/no-empty-file": "error",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
+    "unicorn/no-new-array": "error",
     "unicorn/no-this-assignment": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/prefer-node-protocol": "error",
