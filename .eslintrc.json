@@ -200,7 +200,8 @@
     "unicorn/no-typeof-undefined": "error",
     "unicorn/require-array-join-separator": "error",
     "unicorn/prefer-number-properties": "error",
-    "unicorn/prefer-modern-math-apis": "error"
+    "unicorn/prefer-modern-math-apis": "error",
+    "unicorn/template-indent": "error"
   },
   "overrides": [
     {
