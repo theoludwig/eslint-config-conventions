@@ -194,6 +194,7 @@
     "unicorn/no-new-buffer": "error",
     "unicorn/no-this-assignment": "error",
     "unicorn/no-zero-fractions": "error",
+    "unicorn/number-literal-case": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/throw-new-error": "error",
     "unicorn/no-typeof-undefined": "error"
