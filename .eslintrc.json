@@ -112,7 +112,7 @@
     ],
     "no-multi-str": "error",
     "no-new-func": "error",
-    "no-new-object": "error",
+    "no-object-constructor": "error",
     "no-octal": "error",
     "no-octal-escape": "error",
     "no-proto": "error",
