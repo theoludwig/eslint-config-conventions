@@ -31,16 +31,16 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) >= 16.0.0
+[Node.js](https://nodejs.org/) >= 18.0.0
 
 ### Installation
 
 ```sh
 npm install --save-dev \
-  eslint@^8.44.0 \
-  eslint-plugin-import@^2.27.5 \
+  eslint@^8.51.0 \
+  eslint-plugin-import@^2.28.1 \
   eslint-plugin-promise@^6.1.1 \
-  eslint-plugin-unicorn@^48.0.0 \
+  eslint-plugin-unicorn@^48.0.1 \
   eslint-config-conventions@latest
 ```
 
@@ -57,9 +57,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  typescript@^5.1.6 \
-  @typescript-eslint/eslint-plugin@^6.1.0 \
-  @typescript-eslint/parser@^6.1.0
+  typescript@^5.2.2 \
+  @typescript-eslint/eslint-plugin@^6.8.0 \
+  @typescript-eslint/parser@^6.8.0
 ```
 
 Dependencies are:
