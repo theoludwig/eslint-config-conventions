@@ -1,1 +1,1 @@
-'invalid eqeqeq' == 'invalid eqeqeq'
+"invalid eqeqeq" == "invalid eqeqeq"
