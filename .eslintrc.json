@@ -184,7 +184,6 @@
     "unicorn/no-array-callback-reference": "error",
     "unicorn/no-array-for-each": "error",
     "unicorn/no-array-method-this-argument": "error",
-    "unicorn/no-array-push-push": "error",
     "unicorn/no-document-cookie": "error",
     "unicorn/no-empty-file": "error",
     "unicorn/no-hex-escape": "error",
