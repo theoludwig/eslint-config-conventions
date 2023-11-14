@@ -49,31 +49,31 @@
     "postpublish": "pinst --enable"
   },
   "peerDependencies": {
-    "eslint": "^8.51.0",
-    "eslint-plugin-import": "^2.28.1",
+    "eslint": "^8.53.0",
+    "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-unicorn": "^48.0.1"
+    "eslint-plugin-unicorn": "^49.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.0",
-    "@commitlint/config-conventional": "17.8.0",
+    "@commitlint/cli": "18.4.1",
+    "@commitlint/config-conventional": "18.4.0",
     "@tsconfig/strictest": "2.0.2",
-    "@types/eslint": "8.44.5",
-    "@types/node": "20.8.7",
-    "@typescript-eslint/eslint-plugin": "6.8.0",
-    "@typescript-eslint/parser": "6.8.0",
+    "@types/eslint": "8.44.7",
+    "@types/node": "20.9.0",
+    "@typescript-eslint/eslint-plugin": "6.11.0",
+    "@typescript-eslint/parser": "6.11.0",
     "editorconfig-checker": "5.1.1",
-    "eslint": "8.51.0",
-    "eslint-plugin-import": "2.28.1",
+    "eslint": "8.53.0",
+    "eslint-plugin-import": "2.29.0",
     "eslint-plugin-promise": "6.1.1",
-    "eslint-plugin-unicorn": "48.0.1",
+    "eslint-plugin-unicorn": "49.0.0",
     "husky": "8.0.3",
-    "lint-staged": "15.0.1",
+    "lint-staged": "15.1.0",
     "markdownlint-cli2": "0.10.0",
     "markdownlint-rule-relative-links": "2.1.0",
     "pinst": "3.0.0",
-    "prettier": "3.0.3",
-    "semantic-release": "22.0.5",
+    "prettier": "3.1.0",
+    "semantic-release": "22.0.7",
     "typescript": "5.2.2"
   }
 }
