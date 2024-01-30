@@ -6,6 +6,6 @@
     "module": "commonjs",
     "lib": ["ESNext"],
     "moduleResolution": "node",
-    "rootDir": "./"
-  }
+    "rootDir": "./",
+  },
 }

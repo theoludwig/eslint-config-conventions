@@ -102,7 +102,7 @@ echo "{}" > .prettierrc.json
 
 #### `package.json`
 
-```jsonc
+```json
 {
   "scripts": {
     "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives --ignore-path .gitignore",
