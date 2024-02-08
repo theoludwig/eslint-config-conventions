@@ -323,6 +323,7 @@
         "@typescript-eslint/no-var-requires": "error",
         "@typescript-eslint/no-unsafe-unary-minus": "error",
         "@typescript-eslint/no-array-delete": "error",
+        "@typescript-eslint/prefer-as-const": "error",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-find": "error",
         "@typescript-eslint/prefer-includes": "error",
