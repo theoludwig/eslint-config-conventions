@@ -37,10 +37,10 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ```sh
 npm install --save-dev \
-  eslint@^8.53.0 \
-  eslint-plugin-import@^2.29.0 \
+  eslint@^8.56.0 \
+  eslint-plugin-import@^2.29.1 \
   eslint-plugin-promise@^6.1.1 \
-  eslint-plugin-unicorn@^50.0.0 \
+  eslint-plugin-unicorn@^51.0.1 \
   eslint-config-conventions@latest
 ```
 
@@ -57,9 +57,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  typescript@^5.2.2 \
-  @typescript-eslint/eslint-plugin@^6.11.0 \
-  @typescript-eslint/parser@^6.11.0
+  typescript@^5.3.3 \
+  @typescript-eslint/eslint-plugin@^6.21.0 \
+  @typescript-eslint/parser@^6.21.0
 ```
 
 Dependencies are:
