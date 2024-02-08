@@ -177,6 +177,7 @@
 
     "promise/param-names": "error",
     "promise/no-new-statics": "error",
+    "promise/no-multiple-resolved": "error",
 
     "unicorn/better-regex": "error",
     "unicorn/catch-error-name": "error",
