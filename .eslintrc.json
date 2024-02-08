@@ -137,6 +137,7 @@
     "no-useless-escape": "error",
     "no-useless-rename": "error",
     "no-useless-return": "error",
+    "no-else-return": ["error", { "allowElseIf": false }],
     "no-var": "error",
     "no-void": "error",
     "no-with": "error",
