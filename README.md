@@ -96,7 +96,7 @@ echo "{}" > .prettierrc.json
 }
 ```
 
-**Note:** Please read some important instructions regarding the `project` option [here](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/parser/README.md#configuration).
+**Note:** Please read some important instructions regarding the `project` option [here](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/README.md#configuration).
 
 `"parserOptions.project"` is only required if you use **TypeScript**.
 
