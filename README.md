@@ -57,9 +57,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  typescript@^5.3.3 \
-  @typescript-eslint/eslint-plugin@^6.21.0 \
-  @typescript-eslint/parser@^6.21.0
+  "typescript@^5.3.3" \
+  "@typescript-eslint/eslint-plugin@>=6.21.0" \
+  "@typescript-eslint/parser@>=6.21.0"
 ```
 
 Dependencies are:
