@@ -42,7 +42,7 @@ npm install --save-dev \
   eslint-config-conventions@latest
 ```
 
-This list of dependencies are:
+Dependencies are:
 
 - [ESLint](https://github.com/eslint/eslint)
 - 3 [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
@@ -50,6 +50,8 @@ This list of dependencies are:
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 - This package: `eslint-config-conventions`
+
+#### Installation with TypeScript
 
 If you want to use **TypeScript**, you also need to install:
 
@@ -66,37 +68,49 @@ Dependencies are:
 - [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint): ESLint rules for TypeScript.
 - [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint): ESLint parser for TypeScript.
 
-### Configuration with [Prettier](https://prettier.io/) (recommended)
+### Configuration
 
-You will need to install some dependencies in addition to those required:
+#### `.eslintrc.json` (JavaScript)
+
+```json
+{
+  "extends": ["conventions"],
+  "plugins": ["import", "promise", "unicorn"]
+}
+```
+
+#### `.eslintrc.json` (TypeScript)
+
+```json
+{
+  "extends": ["conventions"],
+  "plugins": ["import", "promise", "unicorn"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      }
+    }
+  ]
+}
+```
+
+#### Configuration with [Prettier](https://prettier.io/) (recommended)
 
 ```sh
-npm install --save-dev prettier eslint-config-prettier eslint-plugin-prettier
+npm install --save-dev prettier
 
 # Create an empty config file to let editors and other tools know you are using Prettier
 # You can personalize it with your own rules
 echo "{}" > .prettierrc.json
 ```
 
-#### `.eslintrc.json`
+That's all! No need to update the `.eslintrc.json` configuration.
 
-```json
-{
-  "extends": ["conventions", "prettier"],
-  "plugins": ["prettier"],
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "project": "./tsconfig.json"
-  },
-  "rules": {
-    "prettier/prettier": "error"
-  }
-}
-```
-
-**Note:** Please read some important instructions regarding the `project` option [here](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/parser/README.md#configuration).
-
-`"parserOptions.project"` is only required if you use **TypeScript**.
+We discourage usage of [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) and [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), as `eslint-config-conventions` doesn't include any stylistic rules, and including these packages has several drawbacks (listed in [Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)) and brings no benefits for this configuration.
 
 #### `package.json`
 
