@@ -38,7 +38,7 @@ npm install --save-dev \
   eslint@^8.56.0 \
   eslint-plugin-import@^2.29.1 \
   eslint-plugin-promise@^6.1.1 \
-  eslint-plugin-unicorn@^51.0.1 \
+  eslint-plugin-unicorn@^53.0.0 \
   eslint-config-conventions@latest
 ```
 
