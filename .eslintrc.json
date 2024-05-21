@@ -140,7 +140,7 @@
     "no-useless-return": "error",
     "no-else-return": ["error", { "allowElseIf": false }],
     "no-var": "error",
-    "no-void": "error",
+    "no-void": ["error", { "allowAsStatement": true }],
     "no-with": "error",
     "object-shorthand": ["error", "properties"],
     "one-var": ["error", { "initialized": "never" }],

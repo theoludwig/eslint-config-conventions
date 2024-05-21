@@ -37,3 +37,10 @@ test("ensure we allow top-level await", async () => {
   )
   assert.strictEqual(lintResult?.errorCount, 0)
 })
+
+test("ensure we allow to ignore floating promise with void operator (@typescript-eslint/no-floating-promises)", async () => {
+  const [lintResult] = await eslint.lintFiles(
+    "test/fixtures/typescript-no-errors-ignore-promise.ts",
+  )
+  assert.strictEqual(lintResult?.errorCount, 0)
+})
