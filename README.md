@@ -21,7 +21,7 @@
 
 ## 📜 About
 
-**eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality, it is highly inspired from [eslint-config-standard-with-typescript](https://github.com/mightyiam/eslint-config-standard-with-typescript) but it is **stricter** and with **no formatting rules**, **only code-quality rules**. It supports both **JavaScript** and **TypeScript**.
+**eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality. It supports both **JavaScript** and **TypeScript**.
 
 This configuration is mostly **for catching bugs** and **code-quality** so it is recommended to use it with [Prettier](https://prettier.io/) for a consistent code style, it works with any `.prettierrc.json` configuration.
 
