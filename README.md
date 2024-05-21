@@ -4,8 +4,6 @@
   <strong><a href="https://eslint.org/docs/developer-guide/shareable-configs">ESLint shareable config</a> to enforce strict conventions and good code quality.</strong>
 </p>
 
-</p>
-
 <p align="center">
   <a href="./CONTRIBUTING.md"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat" alt="CONTRIBUTING" /></a>
   <a href="./LICENSE"><img src="https://img.shields.io/badge/licence-MIT-blue.svg" alt="Licence MIT"/></a>
