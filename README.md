@@ -36,7 +36,6 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 ```sh
 npm install --save-dev \
   eslint@^8.56.0 \
-  eslint-plugin-import@^2.29.1 \
   eslint-plugin-promise@^6.1.1 \
   eslint-plugin-unicorn@^53.0.0 \
   eslint-config-conventions@latest
@@ -46,7 +45,6 @@ Dependencies are:
 
 - [ESLint](https://github.com/eslint/eslint)
 - 3 [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
-  - [eslint-plugin-import](https://github.com/import-js/eslint-plugin-import)
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 - This package: `eslint-config-conventions`

@@ -1,6 +1,6 @@
 {
   "root": true,
-  "plugins": ["import", "promise", "unicorn"],
+  "plugins": ["promise", "unicorn"],
   "env": {
     "browser": true,
     "node": true,
@@ -156,24 +156,6 @@
     "prefer-arrow-callback": "error",
     "arrow-parens": ["error", "always"],
     "arrow-body-style": ["error", "always"],
-
-    "import/no-absolute-path": "error",
-    "import/no-webpack-loader-syntax": "error",
-    "import/no-self-import": "error",
-    "import/no-useless-path-segments": "error",
-    "import/export": "error",
-    "import/first": "error",
-    "import/no-duplicates": "error",
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "internal"],
-        "newlines-between": "always"
-      }
-    ],
-    "import/no-named-default": "error",
-    "import/no-empty-named-blocks": "error",
-    "import/no-anonymous-default-export": "error",
 
     "promise/param-names": "error",
     "promise/no-new-statics": "error",
