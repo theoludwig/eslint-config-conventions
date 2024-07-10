@@ -73,7 +73,7 @@ Dependencies are:
 ```json
 {
   "extends": ["conventions"],
-  "plugins": ["import", "promise", "unicorn"]
+  "plugins": ["promise", "unicorn"]
 }
 ```
 
@@ -82,7 +82,7 @@ Dependencies are:
 ```json
 {
   "extends": ["conventions"],
-  "plugins": ["import", "promise", "unicorn"],
+  "plugins": ["promise", "unicorn"],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
