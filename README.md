@@ -124,12 +124,12 @@ We discourage usage of [eslint-config-prettier](https://github.com/prettier/esli
 ### Usage
 
 ```sh
-npm run lint:eslint
+node --run lint:eslint
 # or to apply automatic fixes to code
-npm run lint:eslint -- --fix
+node --run lint:eslint -- --fix
 
 # Validate code formatting in all supported languages by Prettier
-npm run lint:prettier
+node --run lint:prettier
 ```
 
 ## 💡 Contributing

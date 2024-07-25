@@ -1,7 +1,7 @@
 {
-  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "resolveJsonModule": true,
+    "strict": true,
     "target": "ESNext",
     "module": "commonjs",
     "lib": ["ESNext"],

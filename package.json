@@ -35,17 +35,12 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "lint:commit": "commitlint",
     "lint:editorconfig": "editorconfig-checker",
     "lint:markdown": "markdownlint-cli2",
     "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives --config eslintrc.json",
     "lint:prettier": "prettier . --check",
-    "lint:staged": "lint-staged",
     "test": "node --test",
-    "release": "semantic-release",
-    "postinstall": "husky",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "release": "semantic-release"
   },
   "peerDependencies": {
     "eslint": "^8.56.0",
@@ -53,9 +48,6 @@
     "eslint-plugin-unicorn": "^51.0.1 || ^52.0.0 || ^53.0.0 || ^54.0.0 || ^55.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.2.2",
-    "@commitlint/config-conventional": "19.2.2",
-    "@tsconfig/strictest": "2.0.5",
     "@types/eslint": "8.56.11",
     "@types/node": "20.14.12",
     "@typescript-eslint/eslint-plugin": "7.17.0",
@@ -64,11 +56,8 @@
     "eslint": "8.57.0",
     "eslint-plugin-promise": "7.0.0",
     "eslint-plugin-unicorn": "55.0.0",
-    "husky": "9.1.1",
-    "lint-staged": "15.2.7",
     "markdownlint-cli2": "0.13.0",
     "markdownlint-rule-relative-links": "3.0.0",
-    "pinst": "3.0.0",
     "prettier": "3.3.3",
     "semantic-release": "23.1.1",
     "typescript": "5.5.4"

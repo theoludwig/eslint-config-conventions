@@ -21,8 +21,14 @@ jobs:
       - name: "Install dependencies"
         run: "npm clean-install"
 
-      - run: 'npm run lint:commit -- --to "${{ github.sha }}"'
-      - run: "npm run lint:editorconfig"
-      - run: "npm run lint:markdown"
-      - run: "npm run lint:eslint"
-      - run: "npm run lint:prettier"
+      - run: "node --run lint:editorconfig"
+      - run: "node --run lint:markdown"
+      - run: "node --run lint:eslint"
+      - run: "node --run lint:prettier"
+
+  commitlint:
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4.1.7"
+
+      - uses: "wagoid/commitlint-github-action@v6.0.1"
