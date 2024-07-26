@@ -44,7 +44,7 @@ npm install --save-dev \
 Dependencies are:
 
 - [ESLint](https://github.com/eslint/eslint)
-- 3 [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
+- [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
 - This package: `eslint-config-conventions`
