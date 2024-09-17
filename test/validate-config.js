@@ -20,6 +20,17 @@ test("ensure we validate correctly JavaScript files", async () => {
   assert.strictEqual(withErrors?.errorCount, 3)
 })
 
+test("ensure we do not use deprecated rules", async () => {
+  const [javascriptLintResult] = await eslint.lintFiles(
+    "test/fixtures/javascript-no-errors.js",
+  )
+  const [typescriptLintResult] = await eslint.lintFiles(
+    "test/fixtures/typescript-no-errors.ts",
+  )
+  assert.strictEqual(javascriptLintResult.usedDeprecatedRules.length, 0)
+  assert.strictEqual(typescriptLintResult.usedDeprecatedRules.length, 0)
+})
+
 test("ensure we validate correctly TypeScript files", async () => {
   const [noErrors] = await eslint.lintFiles(
     "test/fixtures/typescript-no-errors.ts",

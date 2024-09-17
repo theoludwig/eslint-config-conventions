@@ -129,7 +129,6 @@
     "no-var": "error",
     "no-void": ["error", { "allowAsStatement": true }],
     "no-with": "error",
-    "no-return-await": "error",
     "object-shorthand": ["error", "properties"],
     "one-var": ["error", { "initialized": "never" }],
     "prefer-const": ["error", { "destructuring": "all" }],
