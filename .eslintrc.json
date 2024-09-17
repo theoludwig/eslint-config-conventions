@@ -93,25 +93,12 @@
     ],
     "no-array-constructor": "error",
     "no-caller": "error",
-    "no-confusing-arrow": "error",
     "no-delete-var": "error",
     "no-empty": ["error", { "allowEmptyCatch": true }],
     "no-empty-static-block": "error",
     "no-eval": "error",
-    "no-floating-decimal": "error",
     "no-global-assign": "error",
     "no-implied-eval": "error",
-    "no-mixed-operators": [
-      "error",
-      {
-        "groups": [
-          ["==", "!=", "===", "!==", ">", ">=", "<", "<="],
-          ["&&", "||"],
-          ["in", "instanceof"]
-        ],
-        "allowSamePrecedence": true
-      }
-    ],
     "no-multi-str": "error",
     "no-new-func": "error",
     "no-object-constructor": "error",
@@ -148,13 +135,11 @@
     "prefer-object-has-own": "error",
     "prefer-promise-reject-errors": "error",
     "prefer-regex-literals": ["error", { "disallowRedundantWrapping": true }],
-    "quote-props": ["error", "as-needed"],
     "radix": "error",
     "yoda": ["error", "never"],
     "curly": ["error", "all"],
     "func-style": ["error", "expression"],
     "prefer-arrow-callback": "error",
-    "arrow-parens": ["error", "always"],
     "arrow-body-style": ["error", "always"],
 
     "promise/param-names": "error",
