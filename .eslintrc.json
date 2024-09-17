@@ -313,8 +313,6 @@
           "error",
           { "allowNumber": true }
         ],
-        "no-return-await": "off",
-        "@typescript-eslint/return-await": "error",
         "@typescript-eslint/strict-boolean-expressions": [
           "error",
           {
