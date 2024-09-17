@@ -1,6 +1,6 @@
 {
   "extends": "./index.js",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "projectService": true
   }
 }
