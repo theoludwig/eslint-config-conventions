@@ -35,9 +35,9 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ```sh
 npm install --save-dev \
-  eslint@^8.56.0 \
-  eslint-plugin-promise@^6.1.1 \
-  eslint-plugin-unicorn@^53.0.0 \
+  eslint@^8.57.0 \
+  eslint-plugin-promise@^7.0.0 \
+  eslint-plugin-unicorn@^55.0.0 \
   eslint-config-conventions@latest
 ```
 
@@ -55,9 +55,9 @@ If you want to use **TypeScript**, you also need to install:
 
 ```sh
 npm install --save-dev \
-  "typescript@^5.3.3" \
-  "@typescript-eslint/eslint-plugin@>=6.21.0" \
-  "@typescript-eslint/parser@>=6.21.0"
+  "typescript@^5.6.2" \
+  "@typescript-eslint/eslint-plugin@^8.0.0" \
+  "@typescript-eslint/parser@^8.0.0"
 ```
 
 Dependencies are:
@@ -72,6 +72,7 @@ Dependencies are:
 
 ```json
 {
+  "root": true,
   "extends": ["conventions"],
   "plugins": ["promise", "unicorn"]
 }
@@ -81,6 +82,7 @@ Dependencies are:
 
 ```json
 {
+  "root": true,
   "extends": ["conventions"],
   "plugins": ["promise", "unicorn"],
   "overrides": [
@@ -89,7 +91,7 @@ Dependencies are:
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"],
       "parserOptions": {
-        "project": "./tsconfig.json"
+        "projectService": true
       }
     }
   ]
