@@ -1,13 +1,9 @@
-const test = require("node:test")
-const assert = require("node:assert/strict")
+import test from "node:test"
+import assert from "node:assert/strict"
 
-const { ESLint } = require("eslint")
+import { ESLint } from "eslint"
 
-const eslint = new ESLint({
-  ignore: false,
-  useEslintrc: false,
-  overrideConfigFile: "eslintrc.json",
-})
+const eslint = new ESLint()
 
 test("ensure we validate correctly JavaScript files", async () => {
   const [noErrors] = await eslint.lintFiles(

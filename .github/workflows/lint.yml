@@ -10,10 +10,10 @@ jobs:
   lint:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4.1.7"
+      - uses: "actions/checkout@v4.2.0"
 
       - name: "Setup Node.js"
-        uses: "actions/setup-node@v4.0.3"
+        uses: "actions/setup-node@v4.0.4"
         with:
           node-version: "22.x"
           cache: "npm"
@@ -22,13 +22,12 @@ jobs:
         run: "npm clean-install"
 
       - run: "node --run lint:editorconfig"
-      - run: "node --run lint:markdown"
       - run: "node --run lint:eslint"
       - run: "node --run lint:prettier"
 
   commitlint:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4.1.7"
+      - uses: "actions/checkout@v4.2.0"
 
       - uses: "wagoid/commitlint-github-action@v6.1.2"

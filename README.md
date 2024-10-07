@@ -29,15 +29,18 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ### Prerequisites
 
-[Node.js](https://nodejs.org/) >= 18.0.0
+[Node.js](https://nodejs.org/) >= 20.9.0
 
 ### Installation
 
 ```sh
 npm install --save-dev \
-  eslint@^8.57.0 \
-  eslint-plugin-promise@^7.0.0 \
-  eslint-plugin-unicorn@^55.0.0 \
+  eslint@^9.12.0 \
+  eslint-plugin-promise@^7.1.0 \
+  eslint-plugin-unicorn@^56.0.0 \
+  globals@^15.10.0 \
+  "typescript@~5.5.4" \
+  "typescript-eslint@^8.8.0" \
   eslint-config-conventions@latest
 ```
 
@@ -47,55 +50,20 @@ Dependencies are:
 - [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
-- This package: `eslint-config-conventions`
-
-#### Installation with TypeScript
-
-If you want to use **TypeScript**, you also need to install:
-
-```sh
-npm install --save-dev \
-  "typescript@~5.5.4" \
-  "@typescript-eslint/eslint-plugin@^8.3.0" \
-  "@typescript-eslint/parser@^8.3.0"
-```
-
-Dependencies are:
-
+- [globals](https://github.com/sindresorhus/globals)
 - [TypeScript](https://github.com/Microsoft/TypeScript)
-- [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint): ESLint rules for TypeScript.
-- [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint): ESLint parser for TypeScript.
+- [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint): tooling which enables ESLint to support TypeScript.
+- This package: `eslint-config-conventions`
 
 ### Configuration
 
-#### `.eslintrc.json` (JavaScript)
+#### `eslint.config.js` (JavaScript and TypeScript)
 
-```json
-{
-  "root": true,
-  "extends": ["conventions"],
-  "plugins": ["promise", "unicorn"]
-}
-```
+```js
+import typescriptESLint from "typescript-eslint"
+import eslintConfigConventions from "eslint-config-conventions"
 
-#### `.eslintrc.json` (TypeScript)
-
-```json
-{
-  "root": true,
-  "extends": ["conventions"],
-  "plugins": ["promise", "unicorn"],
-  "overrides": [
-    {
-      "files": ["*.ts", "*.tsx"],
-      "parser": "@typescript-eslint/parser",
-      "plugins": ["@typescript-eslint"],
-      "parserOptions": {
-        "projectService": true
-      }
-    }
-  ]
-}
+export default typescriptESLint.config(...eslintConfigConventions)
 ```
 
 #### Configuration with [Prettier](https://prettier.io/) (recommended)
@@ -108,7 +76,7 @@ npm install --save-dev prettier
 echo "{}" > .prettierrc.json
 ```
 
-That's all! No need to update the `.eslintrc.json` configuration.
+That's all! No need to update the `eslint.config.js` configuration.
 
 We discourage usage of [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier) and [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier), as `eslint-config-conventions` doesn't include any stylistic rules, and including these packages has several drawbacks (listed in [Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)) and brings no benefits for this configuration.
 
@@ -117,7 +85,7 @@ We discourage usage of [eslint-config-prettier](https://github.com/prettier/esli
 ```json
 {
   "scripts": {
-    "lint:eslint": "eslint . --max-warnings 0 --report-unused-disable-directives --ignore-path .gitignore",
+    "lint:eslint": "eslint . --max-warnings 0",
     "lint:prettier": "prettier . --check"
   }
 }
