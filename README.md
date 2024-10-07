@@ -38,6 +38,7 @@ npm install --save-dev \
   eslint@^9.12.0 \
   eslint-plugin-promise@^7.1.0 \
   eslint-plugin-unicorn@^56.0.0 \
+  eslint-plugin-import-x@^4.3.1 \
   globals@^15.10.0 \
   "typescript@~5.5.4" \
   "typescript-eslint@^8.8.0" \
@@ -50,6 +51,7 @@ Dependencies are:
 - [ESLint Plugins](https://eslint.org/docs/user-guide/configuring/plugins)
   - [eslint-plugin-promise](https://github.com/xjamundx/eslint-plugin-promise)
   - [eslint-plugin-unicorn](https://github.com/sindresorhus/eslint-plugin-unicorn)
+  - [eslint-plugin-import-x](https://github.com/un-ts/eslint-plugin-import-x)
 - [globals](https://github.com/sindresorhus/globals)
 - [TypeScript](https://github.com/Microsoft/TypeScript)
 - [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint): tooling which enables ESLint to support TypeScript.

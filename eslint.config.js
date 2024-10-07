@@ -1,5 +1,6 @@
 import promise from "eslint-plugin-promise"
 import unicorn from "eslint-plugin-unicorn"
+import importX from "eslint-plugin-import-x"
 import globals from "globals"
 import typescriptESLint from "typescript-eslint"
 
@@ -9,6 +10,7 @@ export default typescriptESLint.config(
     plugins: {
       promise,
       unicorn,
+      "import-x": importX,
     },
     linterOptions: {
       reportUnusedDisableDirectives: "error",
@@ -240,6 +242,17 @@ export default typescriptESLint.config(
       "unicorn/prefer-modern-math-apis": "error",
       "unicorn/prefer-structured-clone": "error",
       "unicorn/template-indent": "error",
+
+      "import-x/no-absolute-path": "error",
+      "import-x/no-webpack-loader-syntax": "error",
+      "import-x/no-self-import": "error",
+      "import-x/no-useless-path-segments": "error",
+      "import-x/export": "error",
+      "import-x/no-duplicates": "error",
+      "import-x/no-named-default": "error",
+      "import-x/no-empty-named-blocks": "error",
+      "import-x/no-anonymous-default-export": "error",
+      "import-x/consistent-type-specifier-style": ["error", "prefer-top-level"],
     },
   },
   {
