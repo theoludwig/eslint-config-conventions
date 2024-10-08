@@ -29,7 +29,7 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ### Prerequisites
 
-[Node.js](https://nodejs.org/) >= 20.9.0
+[Node.js](https://nodejs.org/) >= 20.11.0
 
 ### Installation
 
