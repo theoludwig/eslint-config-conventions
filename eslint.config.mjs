@@ -1,8 +1,8 @@
 // @ts-check
 
 import typescriptESLint from "typescript-eslint"
-import eslintConfigConventions from "./eslint.config.js"
+import configConventions from "./eslint.config.js"
 
-export default typescriptESLint.config(...eslintConfigConventions, {
+export default typescriptESLint.config(...configConventions, {
   ignores: ["test/fixtures/*"],
 })

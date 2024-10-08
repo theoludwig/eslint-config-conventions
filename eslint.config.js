@@ -1,3 +1,5 @@
+// @ts-check
+
 import promise from "eslint-plugin-promise"
 import unicorn from "eslint-plugin-unicorn"
 import importX from "eslint-plugin-import-x"

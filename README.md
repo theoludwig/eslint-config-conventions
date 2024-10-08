@@ -40,8 +40,8 @@ npm install --save-dev \
   eslint-plugin-unicorn@^56.0.0 \
   eslint-plugin-import-x@^4.3.1 \
   globals@^15.10.0 \
-  "typescript@~5.5.4" \
-  "typescript-eslint@^8.8.0" \
+  typescript@~5.5.4 \
+  typescript-eslint@^8.8.0 \
   eslint-config-conventions@latest
 ```
 
@@ -62,10 +62,12 @@ Dependencies are:
 #### `eslint.config.js` (JavaScript and TypeScript)
 
 ```js
-import typescriptESLint from "typescript-eslint"
-import eslintConfigConventions from "eslint-config-conventions"
+// @ts-check
 
-export default typescriptESLint.config(...eslintConfigConventions)
+import typescriptESLint from "typescript-eslint"
+import configConventions from "eslint-config-conventions"
+
+export default typescriptESLint.config(...configConventions)
 ```
 
 #### Configuration with [Prettier](https://prettier.io/) (recommended)
