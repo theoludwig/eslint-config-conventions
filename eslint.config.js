@@ -331,13 +331,6 @@ export default typescriptESLint.config(
       "@typescript-eslint/no-useless-constructor": "error",
       "@typescript-eslint/no-unnecessary-template-expression": "error",
 
-      "@typescript-eslint/no-unnecessary-condition": [
-        "error",
-        {
-          allowConstantLoopConditions: true,
-        },
-      ],
-
       "@typescript-eslint/adjacent-overload-signatures": "error",
 
       "@typescript-eslint/array-type": [
