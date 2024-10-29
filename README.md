@@ -59,15 +59,22 @@ Dependencies are:
 
 ### Configuration
 
-#### `eslint.config.js` (JavaScript and TypeScript)
+#### `eslint.config.js`
 
 ```js
-// @ts-check
-
 import typescriptESLint from "typescript-eslint"
 import configConventions from "eslint-config-conventions"
 
-export default typescriptESLint.config(...configConventions)
+export default typescriptESLint.config(...configConventions, {
+  files: ["**/*.ts", "**/*.tsx"],
+  languageOptions: {
+    parser: typescriptESLint.parser,
+    parserOptions: {
+      projectService: true,
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
 ```
 
 #### Configuration with [Prettier](https://prettier.io/) (recommended)
