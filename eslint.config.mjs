@@ -1,5 +1,3 @@
-// @ts-check
-
 import typescriptESLint from "typescript-eslint"
 import configConventions from "./eslint.config.js"
 
