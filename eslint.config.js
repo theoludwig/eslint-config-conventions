@@ -330,13 +330,6 @@ export default typescriptESLint.config(
 
       "@typescript-eslint/adjacent-overload-signatures": "error",
 
-      "@typescript-eslint/array-type": [
-        "error",
-        {
-          default: "array-simple",
-        },
-      ],
-
       "@typescript-eslint/no-unsafe-function-type": "error",
       "@typescript-eslint/no-wrapper-object-types": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
