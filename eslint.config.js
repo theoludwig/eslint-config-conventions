@@ -79,7 +79,13 @@ export default typescriptESLint.config(
       "no-unused-vars": [
         "error",
         {
+          args: "all",
+          argsIgnorePattern: "^_",
+          caughtErrors: "all",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
           varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
         },
       ],
       "no-use-before-define": [
@@ -272,19 +278,25 @@ export default typescriptESLint.config(
 
     rules: {
       "no-undef": "off",
+
       "no-dupe-class-members": "off",
       "@typescript-eslint/no-dupe-class-members": "error",
-      "no-unused-vars": "off",
 
+      "no-unused-vars": "off",
       "@typescript-eslint/no-unused-vars": [
         "error",
         {
+          args: "all",
+          argsIgnorePattern: "^_",
+          caughtErrors: "all",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
           varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
         },
       ],
 
       "no-use-before-define": "off",
-
       "@typescript-eslint/no-use-before-define": [
         "error",
         {
@@ -298,12 +310,14 @@ export default typescriptESLint.config(
 
       "default-param-last": "off",
       "@typescript-eslint/default-param-last": "error",
+
       "no-array-constructor": "off",
       "@typescript-eslint/no-array-constructor": "error",
+
       "no-implied-eval": "off",
       "@typescript-eslint/no-implied-eval": "error",
-      "no-redeclare": "off",
 
+      "no-redeclare": "off",
       "@typescript-eslint/no-redeclare": [
         "error",
         {
@@ -313,8 +327,8 @@ export default typescriptESLint.config(
 
       "no-throw-literal": "off",
       "@typescript-eslint/only-throw-error": "error",
-      "no-unused-expressions": "off",
 
+      "no-unused-expressions": "off",
       "@typescript-eslint/no-unused-expressions": [
         "error",
         {
@@ -326,13 +340,14 @@ export default typescriptESLint.config(
 
       "no-useless-constructor": "off",
       "@typescript-eslint/no-useless-constructor": "error",
-      "@typescript-eslint/no-unnecessary-template-expression": "error",
 
+      "@typescript-eslint/no-unnecessary-template-expression": "error",
       "@typescript-eslint/adjacent-overload-signatures": "error",
 
       "@typescript-eslint/no-unsafe-function-type": "error",
       "@typescript-eslint/no-wrapper-object-types": "error",
       "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+
       "no-duplicate-imports": "off",
       "@typescript-eslint/consistent-type-imports": "error",
 
@@ -411,6 +426,7 @@ export default typescriptESLint.config(
       "@typescript-eslint/prefer-reduce-type-parameter": "error",
       "@typescript-eslint/prefer-return-this-type": "error",
       "@typescript-eslint/promise-function-async": "error",
+
       "prefer-promise-reject-errors": "off",
       "@typescript-eslint/prefer-promise-reject-errors": "error",
 
