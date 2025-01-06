@@ -388,7 +388,19 @@ export default typescriptESLint.config(
         },
       ],
 
-      "@typescript-eslint/no-floating-promises": "error",
+      "@typescript-eslint/no-floating-promises": [
+        "error",
+        {
+          allowForKnownSafeCalls: [
+            {
+              from: "package",
+              name: ["it", "describe"],
+              package: "node:test",
+            },
+          ],
+        },
+      ],
+
       "@typescript-eslint/no-for-in-array": "error",
       "@typescript-eslint/no-invalid-void-type": "error",
       "@typescript-eslint/no-misused-new": "error",
