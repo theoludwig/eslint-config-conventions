@@ -363,7 +363,6 @@ export default typescriptESLint.config(
       ],
 
       "@typescript-eslint/method-signature-style": "error",
-      "@typescript-eslint/unbound-method": "error",
 
       "@typescript-eslint/naming-convention": [
         "error",
