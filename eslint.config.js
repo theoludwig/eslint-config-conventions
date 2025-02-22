@@ -132,6 +132,7 @@ export default typescriptESLint.config(
       "no-array-constructor": "error",
       "no-caller": "error",
       "no-delete-var": "error",
+      "no-implicit-coercion": "error",
       "no-empty": [
         "error",
         {
