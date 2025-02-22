@@ -45,20 +45,20 @@
     "release": "semantic-release"
   },
   "peerDependencies": {
-    "eslint": "^9.12.0",
-    "eslint-plugin-promise": "^7.1.0",
-    "eslint-plugin-unicorn": "^56.0.0",
-    "eslint-plugin-import-x": "^4.3.1",
-    "globals": "^15.10.0",
-    "typescript-eslint": "^8.8.0"
+    "eslint": "^9.21.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-unicorn": "^57.0.0",
+    "eslint-plugin-import-x": "^4.6.1",
+    "globals": "^16.0.0",
+    "typescript-eslint": "^8.24.1"
   },
   "devDependencies": {
     "@types/node": "22.13.5",
-    "globals": "15.15.0",
+    "globals": "16.0.0",
     "editorconfig-checker": "6.0.1",
     "eslint": "9.21.0",
     "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-unicorn": "56.0.1",
+    "eslint-plugin-unicorn": "57.0.0",
     "eslint-plugin-import-x": "4.6.1",
     "typescript-eslint": "8.24.1",
     "prettier": "3.5.2",

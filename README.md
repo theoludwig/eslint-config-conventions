@@ -35,13 +35,13 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ```sh
 npm install --save-dev \
-  eslint@^9.12.0 \
-  eslint-plugin-promise@^7.1.0 \
-  eslint-plugin-unicorn@^56.0.0 \
-  eslint-plugin-import-x@^4.3.1 \
-  globals@^15.10.0 \
-  typescript@~5.5.4 \
-  typescript-eslint@^8.8.0 \
+  eslint@^9.21.0 \
+  eslint-plugin-promise@^7.2.1 \
+  eslint-plugin-unicorn@^57.0.0 \
+  eslint-plugin-import-x@^4.6.1 \
+  globals@^16.0.0 \
+  typescript@^5.7.3 \
+  typescript-eslint@^8.24.1 \
   eslint-config-conventions@latest
 ```
 
