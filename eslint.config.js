@@ -251,6 +251,7 @@ export default typescriptESLint.config(
       "unicorn/prefer-modern-math-apis": "error",
       "unicorn/prefer-structured-clone": "error",
       "unicorn/template-indent": "error",
+      "unicorn/consistent-existence-index-check": "error",
 
       "import-x/no-absolute-path": "error",
       "import-x/no-webpack-loader-syntax": "error",
