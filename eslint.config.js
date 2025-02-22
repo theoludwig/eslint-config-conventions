@@ -133,6 +133,7 @@ export default typescriptESLint.config(
       "no-caller": "error",
       "no-delete-var": "error",
       "no-implicit-coercion": "error",
+      "no-extra-boolean-cast": ["error", { enforceForInnerExpressions: true }],
       "no-empty": [
         "error",
         {
