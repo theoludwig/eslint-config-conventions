@@ -225,6 +225,7 @@ export default typescriptESLint.config(
       "unicorn/better-regex": "error",
       "unicorn/catch-error-name": "error",
       "unicorn/custom-error-definition": "error",
+      "unicorn/consistent-date-clone": "error",
       "unicorn/error-message": "error",
       "unicorn/escape-case": "error",
       "unicorn/explicit-length-check": "error",
