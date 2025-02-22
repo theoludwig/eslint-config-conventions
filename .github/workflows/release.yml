@@ -19,7 +19,7 @@ jobs:
           persist-credentials: false
 
       - name: "Setup Node.js"
-        uses: "actions/setup-node@v4.1.0"
+        uses: "actions/setup-node@v4.2.0"
         with:
           node-version: "lts/*"
           cache: "npm"
