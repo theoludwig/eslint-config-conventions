@@ -235,7 +235,7 @@ export default typescriptESLint.config(
       "unicorn/no-document-cookie": "error",
       "unicorn/no-empty-file": "error",
       "unicorn/no-hex-escape": "error",
-      "unicorn/no-instanceof-array": "error",
+      "unicorn/no-instanceof-builtins": "error",
       "unicorn/no-new-array": "error",
       "unicorn/no-new-buffer": "error",
       "unicorn/no-this-assignment": "error",
