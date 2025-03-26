@@ -53,16 +53,16 @@
     "typescript-eslint": "^8.24.1"
   },
   "devDependencies": {
-    "@types/node": "22.13.5",
+    "@types/node": "22.13.13",
     "globals": "16.0.0",
     "editorconfig-checker": "6.0.1",
-    "eslint": "9.21.0",
+    "eslint": "9.23.0",
     "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-unicorn": "57.0.0",
-    "eslint-plugin-import-x": "4.6.1",
-    "typescript-eslint": "8.24.1",
-    "prettier": "3.5.2",
+    "eslint-plugin-unicorn": "58.0.0",
+    "eslint-plugin-import-x": "4.9.3",
+    "typescript-eslint": "8.28.0",
+    "prettier": "3.5.3",
     "semantic-release": "24.2.3",
-    "typescript": "5.7.3"
+    "typescript": "5.8.2"
   }
 }
