@@ -37,10 +37,10 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 npm install --save-dev \
   eslint@^9.21.0 \
   eslint-plugin-promise@^7.2.1 \
-  eslint-plugin-unicorn@^57.0.0 \
+  eslint-plugin-unicorn@^59.0.0 \
   eslint-plugin-import-x@^4.6.1 \
   globals@^16.0.0 \
-  typescript@^5.7.3 \
+  typescript@^5.8.3 \
   typescript-eslint@^8.24.1 \
   eslint-config-conventions@latest
 ```
