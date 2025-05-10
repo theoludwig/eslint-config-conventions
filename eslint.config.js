@@ -346,6 +346,8 @@ export default typescriptESLint.config(
       "no-useless-constructor": "off",
       "@typescript-eslint/no-useless-constructor": "error",
 
+      '@typescript-eslint/no-unnecessary-type-conversion': 'error',
+
       "@typescript-eslint/no-unnecessary-template-expression": "error",
       "@typescript-eslint/adjacent-overload-signatures": "error",
 
