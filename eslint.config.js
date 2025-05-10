@@ -254,6 +254,7 @@ export default typescriptESLint.config(
       "unicorn/consistent-existence-index-check": "error",
       "unicorn/no-unnecessary-array-flat-depth": "error",
       "unicorn/consistent-assert": "error",
+      "unicorn/no-accessor-recursion": "error",
 
       "import-x/no-absolute-path": "error",
       "import-x/no-webpack-loader-syntax": "error",
