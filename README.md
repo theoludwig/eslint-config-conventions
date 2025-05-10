@@ -41,7 +41,7 @@ npm install --save-dev \
   eslint-plugin-import-x@^4.6.1 \
   globals@^16.0.0 \
   typescript@^5.8.3 \
-  typescript-eslint@^8.24.1 \
+  typescript-eslint@^8.32.0 \
   eslint-config-conventions@latest
 ```
 
