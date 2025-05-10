@@ -253,6 +253,7 @@ export default typescriptESLint.config(
       "unicorn/template-indent": "error",
       "unicorn/consistent-existence-index-check": "error",
       "unicorn/no-unnecessary-array-flat-depth": "error",
+      "unicorn/consistent-assert": "error",
 
       "import-x/no-absolute-path": "error",
       "import-x/no-webpack-loader-syntax": "error",
