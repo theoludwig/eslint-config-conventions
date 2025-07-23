@@ -403,7 +403,7 @@ export default typescriptESLint.config(
           allowForKnownSafeCalls: [
             {
               from: "package",
-              name: ["it", "describe"],
+              name: ["test", "it", "suite", "describe"],
               package: "node:test",
             },
           ],
