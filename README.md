@@ -17,7 +17,7 @@
   <a href="https://www.npmjs.com/package/eslint-config-conventions"><img src="https://img.shields.io/npm/v/eslint-config-conventions.svg" alt="npm version"></a>
 </p>
 
-## 📜 About
+## About
 
 **eslint-config-conventions** is a [ESLint](https://eslint.org) configuration to enforce strict conventions and good code quality. It supports both **JavaScript** and **TypeScript**.
 
@@ -25,7 +25,7 @@ This configuration is mostly **for catching bugs** and **code-quality** so it is
 
 More information about **formatting rules** vs **code-quality rules** can be found on [Prettier vs. Linters](https://prettier.io/docs/en/comparison.html).
 
-## ⚙️ Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -113,12 +113,21 @@ node --run lint:eslint -- --fix
 node --run lint:prettier
 ```
 
-## 💡 Contributing
+### `.oxlintrc.json` (if using [oxlint](https://oxc.rs/))
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "extends": ["node_modules/eslint-config-conventions/.oxlintrc.json"]
+}
+```
+
+## Contributing
 
 Anyone can help to improve the project, submit a Feature Request, a bug report or even correct a simple spelling mistake.
 
 The steps to contribute can be found in the [CONTRIBUTING.md](./CONTRIBUTING.md) file.
 
-## 📄 License
+## License
 
 [MIT](./LICENSE)

@@ -1,6 +1,6 @@
-# 💡 Contributing
+# Contributing
 
-Thanks a lot for your interest in contributing to **eslint-config-conventions**! 🎉
+Thanks a lot for your interest in contributing to **eslint-config-conventions**!
 
 ## Code of Conduct
 
