@@ -35,7 +35,7 @@ More information about **formatting rules** vs **code-quality rules** can be fou
 
 ```sh
 npm install --save-dev \
-  eslint@^9.21.0 \
+  eslint@^9.22.0 \
   eslint-plugin-promise@^7.2.1 \
   eslint-plugin-unicorn@^61.0.0 \
   eslint-plugin-import-x@^4.6.1 \
@@ -62,10 +62,10 @@ Dependencies are:
 #### `eslint.config.js`
 
 ```js
-import typescriptESLint from "typescript-eslint"
+import { defineConfig } from "eslint/config"
 import configConventions from "eslint-config-conventions"
 
-export default typescriptESLint.config(...configConventions, {
+export default defineConfig(...configConventions, {
   files: ["**/*.ts", "**/*.tsx"],
   languageOptions: {
     parser: typescriptESLint.parser,

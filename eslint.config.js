@@ -1,10 +1,11 @@
+import importX from "eslint-plugin-import-x"
 import promise from "eslint-plugin-promise"
 import unicorn from "eslint-plugin-unicorn"
-import importX from "eslint-plugin-import-x"
+import { defineConfig } from "eslint/config"
 import globals from "globals"
 import typescriptESLint from "typescript-eslint"
 
-export default typescriptESLint.config(
+export default defineConfig(
   {
     name: "eslint-config-conventions",
     plugins: {

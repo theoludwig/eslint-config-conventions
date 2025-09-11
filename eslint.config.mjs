@@ -1,6 +1,6 @@
-import typescriptESLint from "typescript-eslint"
+import { defineConfig } from "eslint/config"
 import configConventions from "./eslint.config.js"
 
-export default typescriptESLint.config(...configConventions, {
+export default defineConfig(...configConventions, {
   ignores: ["test/fixtures/*"],
 })
