@@ -385,7 +385,6 @@ export default defineConfig(
 
       "@typescript-eslint/no-base-to-string": "error",
       "@typescript-eslint/no-deprecated": "error",
-      "@typescript-eslint/no-dynamic-delete": "error",
       "@typescript-eslint/no-extra-non-null-assertion": "error",
       "@typescript-eslint/no-redundant-type-constituents": "error",
 
