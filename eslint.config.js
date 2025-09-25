@@ -1,4 +1,4 @@
-import importX from "eslint-plugin-import-x"
+import importXPlugin from "eslint-plugin-import-x"
 import promise from "eslint-plugin-promise"
 import unicorn from "eslint-plugin-unicorn"
 import { defineConfig } from "eslint/config"
@@ -11,7 +11,7 @@ export default defineConfig(
     plugins: {
       promise,
       unicorn,
-      "import-x": importX,
+      "import-x": importXPlugin,
     },
     linterOptions: {
       reportUnusedDisableDirectives: "error",

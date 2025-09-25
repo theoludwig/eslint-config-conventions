@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["typescript", "unicorn", "react", "oxc", "promise"],
+  "plugins": ["typescript", "unicorn", "react", "oxc", "import", "promise"],
   "categories": {
     "correctness": "error",
     "perf": "error",
@@ -137,6 +137,7 @@
     ],
     "no-useless-call": "error",
     "no-useless-concat": "error",
+    "no-useless-computed-key": "error",
     "no-useless-constructor": "error",
     "no-useless-escape": "error",
     "no-useless-rename": "error",
@@ -241,7 +242,15 @@
     "@next/next/no-document-import-in-page": "error",
     "@next/next/no-duplicate-head": "error",
     "@next/next/no-head-import-in-document": "error",
-    "@next/next/no-script-component-in-head": "error"
+    "@next/next/no-script-component-in-head": "error",
+    "import-x/no-absolute-path": "error",
+    "import-x/no-webpack-loader-syntax": "error",
+    "import-x/no-self-import": "error",
+    "import-x/no-duplicates": "error",
+    "import-x/no-named-default": "error",
+    "import-x/no-empty-named-blocks": "error",
+    "import-x/no-anonymous-default-export": "error",
+    "import-x/consistent-type-specifier-style": ["error", "prefer-top-level"]
   },
   "overrides": [
     {
