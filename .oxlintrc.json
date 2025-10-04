@@ -251,7 +251,8 @@
     "import-x/no-empty-named-blocks": "error",
     "import-x/no-anonymous-default-export": "error",
     "import-x/consistent-type-specifier-style": ["error", "prefer-top-level"],
-    "import-x/no-unassigned-import": "off"
+    "import-x/no-unassigned-import": "off",
+    "import-x/no-named-as-default-member": "off"
   },
   "overrides": [
     {
