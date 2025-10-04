@@ -194,6 +194,7 @@
     "unicorn/consistent-assert": "error",
     "unicorn/no-accessor-recursion": "error",
     "unicorn/no-array-reverse": "off",
+    "unicorn/no-array-sort": "off",
     "react/no-array-index-key": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "error",
