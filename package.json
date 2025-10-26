@@ -49,7 +49,7 @@
   "peerDependencies": {
     "eslint": "^9.22.0",
     "eslint-plugin-promise": "^7.2.1",
-    "eslint-plugin-unicorn": "^61.0.0",
+    "eslint-plugin-unicorn": "^61.0.0 || ^62.0.0",
     "eslint-plugin-import-x": "^4.6.1",
     "globals": "^16.0.0",
     "typescript-eslint": "^8.32.0"
@@ -75,18 +75,18 @@
     }
   },
   "devDependencies": {
-    "@types/node": "24.7.0",
+    "@types/node": "24.9.1",
     "globals": "16.4.0",
-    "editorconfig-checker": "6.1.0",
-    "oxlint": "1.20.0",
-    "@oxlint/migrate": "1.20.0",
-    "eslint": "9.37.0",
+    "editorconfig-checker": "6.1.1",
+    "oxlint": "1.24.0",
+    "@oxlint/migrate": "1.24.0",
+    "eslint": "9.38.0",
     "eslint-plugin-promise": "7.2.1",
-    "eslint-plugin-unicorn": "61.0.2",
+    "eslint-plugin-unicorn": "62.0.0",
     "eslint-plugin-import-x": "4.16.1",
-    "typescript-eslint": "8.46.0",
+    "typescript-eslint": "8.46.2",
     "prettier": "3.6.2",
-    "semantic-release": "24.2.9",
+    "semantic-release": "25.0.1",
     "typescript": "5.9.3"
   }
 }
