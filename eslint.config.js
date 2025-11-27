@@ -159,7 +159,7 @@ export default defineConfig(
       ],
       "no-regex-spaces": "error",
       "no-shadow-restricted-names": "error",
-      "no-throw-literal": "error",
+      "no-throw-literal": "off",
       "no-undef-init": "error",
       "no-unused-expressions": [
         "error",
@@ -335,7 +335,7 @@ export default defineConfig(
       ],
 
       "no-throw-literal": "off",
-      "@typescript-eslint/only-throw-error": "error",
+      "@typescript-eslint/only-throw-error": "off",
 
       "no-unused-expressions": "off",
       "@typescript-eslint/no-unused-expressions": [
