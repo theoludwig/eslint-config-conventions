@@ -14,6 +14,7 @@
   },
   "rules": {
     "no-await-in-loop": "off",
+    "constructor-super": "error",
     "for-direction": "error",
     "no-async-promise-executor": "error",
     "no-class-assign": "error",
@@ -41,6 +42,7 @@
     "no-loss-of-precision": "error",
     "no-new-native-nonconstructor": "error",
     "no-obj-calls": "error",
+    "no-promise-executor-return": "error",
     "no-prototype-builtins": "error",
     "no-self-assign": "error",
     "no-self-compare": "error",
@@ -99,6 +101,7 @@
     "no-array-constructor": "error",
     "no-caller": "error",
     "no-delete-var": "error",
+    "no-implicit-coercion": "error",
     "no-extra-boolean-cast": [
       "error",
       {
@@ -141,6 +144,7 @@
     "no-useless-constructor": "error",
     "no-useless-escape": "error",
     "no-useless-rename": "error",
+    "no-useless-return": "error",
     "no-else-return": [
       "error",
       {
@@ -352,6 +356,14 @@
         "@typescript-eslint/prefer-as-const": "error",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-includes": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": [
+          "error",
+          {
+            "ignoreTernaryTests": true,
+            "ignoreConditionalTests": false,
+            "ignoreMixedLogicalExpressions": false
+          }
+        ],
         "@typescript-eslint/prefer-reduce-type-parameter": "error",
         "@typescript-eslint/prefer-return-this-type": "error",
         "@typescript-eslint/promise-function-async": "error",
