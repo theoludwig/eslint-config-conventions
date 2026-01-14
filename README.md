@@ -39,7 +39,7 @@ npm install --save-dev \
   eslint-plugin-promise@^7.2.1 \
   eslint-plugin-unicorn@^62.0.0 \
   eslint-plugin-import-x@^4.6.1 \
-  globals@^16.0.0 \
+  globals@^17.0.0 \
   typescript@^5.9.3 \
   typescript-eslint@^8.32.0 \
   eslint-config-conventions@latest
