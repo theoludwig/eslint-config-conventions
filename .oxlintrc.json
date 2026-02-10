@@ -16,6 +16,7 @@
     "no-await-in-loop": "off",
     "constructor-super": "error",
     "for-direction": "error",
+    "getter-return": "error",
     "no-async-promise-executor": "error",
     "no-class-assign": "error",
     "no-compare-neg-zero": "error",
@@ -40,6 +41,7 @@
     "no-invalid-regexp": "error",
     "no-irregular-whitespace": "error",
     "no-loss-of-precision": "error",
+    "no-misleading-character-class": "error",
     "no-new-native-nonconstructor": "error",
     "no-obj-calls": "error",
     "no-promise-executor-return": "error",
@@ -49,7 +51,9 @@
     "no-setter-return": "error",
     "no-sparse-arrays": "error",
     "no-this-before-super": "error",
+    "no-undef": "error",
     "no-unexpected-multiline": "error",
+    "no-unreachable": "error",
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "no-unsafe-optional-chaining": "error",
@@ -159,6 +163,12 @@
       }
     ],
     "no-with": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
     "prefer-object-has-own": "error",
     "prefer-promise-reject-errors": "error",
     "radix": "error",
@@ -253,6 +263,7 @@
     "import-x/no-absolute-path": "error",
     "import-x/no-webpack-loader-syntax": "error",
     "import-x/no-self-import": "error",
+    "import-x/export": "error",
     "import-x/no-duplicates": "error",
     "import-x/no-named-default": "error",
     "import-x/no-empty-named-blocks": "error",
