@@ -16,8 +16,10 @@
     "perf": "error"
   },
   "env": {
+    "builtin": true,
     "browser": true,
-    "node": true
+    "node": true,
+    "shared-node-browser": true
   },
   "rules": {
     "no-await-in-loop": "off",
