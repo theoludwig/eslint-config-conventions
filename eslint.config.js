@@ -409,7 +409,6 @@ export default defineConfig(
       ],
 
       "@typescript-eslint/no-for-in-array": "error",
-      "@typescript-eslint/no-invalid-void-type": "error",
       "@typescript-eslint/no-misused-new": "error",
       "@typescript-eslint/no-non-null-asserted-optional-chain": "error",
       "@typescript-eslint/no-non-null-assertion": "error",
