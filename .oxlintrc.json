@@ -245,14 +245,7 @@
     "@typescript-eslint/no-require-imports": "error",
     "@typescript-eslint/prefer-function-type": "error",
     "@typescript-eslint/prefer-find": "error",
-    "@typescript-eslint/prefer-nullish-coalescing": [
-      "error",
-      {
-        "ignoreTernaryTests": true,
-        "ignoreConditionalTests": false,
-        "ignoreMixedLogicalExpressions": false
-      }
-    ],
+    "@typescript-eslint/prefer-nullish-coalescing": "error",
     "@typescript-eslint/prefer-readonly": "error",
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
     "@typescript-eslint/prefer-return-this-type": "error",
