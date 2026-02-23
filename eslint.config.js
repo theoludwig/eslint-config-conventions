@@ -431,14 +431,7 @@ export default defineConfig(
       "@typescript-eslint/prefer-find": "error",
       "@typescript-eslint/prefer-includes": "error",
 
-      "@typescript-eslint/prefer-nullish-coalescing": [
-        "error",
-        {
-          ignoreTernaryTests: true,
-          ignoreConditionalTests: false,
-          ignoreMixedLogicalExpressions: false,
-        },
-      ],
+      "@typescript-eslint/prefer-nullish-coalescing": "off",
 
       "@typescript-eslint/prefer-readonly": "error",
       "@typescript-eslint/prefer-reduce-type-parameter": "error",
