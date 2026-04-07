@@ -118,7 +118,13 @@ node --run lint:prettier
 ```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "extends": ["node_modules/eslint-config-conventions/.oxlintrc.json"]
+  "extends": ["node_modules/eslint-config-conventions/.oxlintrc.json"],
+  "options": {
+    "typeAware": true,
+    "typeCheck": true,
+    "denyWarnings": true,
+    "reportUnusedDisableDirectives": "error"
+  }
 }
 ```
 

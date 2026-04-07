@@ -33,6 +33,9 @@
     "require-await": "off",
     "no-lonely-if": "off",
     "array-callback-return": "off",
+    "no-shadow": "off",
+    "no-throw-literal": "off",
+    "consistent-return": "off",
 
     "getter-return": "error",
     "no-undef": "error",
@@ -85,8 +88,6 @@
     "no-new-func": "error",
     "no-proto": "error",
     "no-regex-spaces": "error",
-    "no-shadow": "off",
-    "no-throw-literal": "off",
     "no-useless-computed-key": "error",
     "no-else-return": [
       "error",
@@ -112,6 +113,7 @@
     "curly": "error",
     "func-style": "error",
     "arrow-body-style": ["error", "always"],
+    "object-shorthand": ["error", "properties"],
 
     "promise/param-names": "error",
     "promise/no-nesting": "error",
@@ -162,17 +164,17 @@
     "import/no-named-as-default-member": "off",
     "import/max-dependencies": "off",
 
-    "@typescript-eslint/ban-types": "off",
-    "@typescript-eslint/no-unnecessary-type-arguments": "off",
-    "@typescript-eslint/no-unsafe-type-assertion": "off",
-    "@typescript-eslint/no-unsafe-member-access": "off",
-    "@typescript-eslint/no-confusing-void-expression": "off",
-    "@typescript-eslint/no-unsafe-assignment": "off",
-    "@typescript-eslint/no-misused-promises": "off",
-    "@typescript-eslint/return-await": ["error", "always"],
-    "@typescript-eslint/require-await": "off",
-    "@typescript-eslint/switch-exhaustiveness-check": "off",
-    "@typescript-eslint/ban-ts-comment": "off",
+    "typescript/ban-types": "off",
+    "typescript/no-unnecessary-type-arguments": "off",
+    "typescript/no-unsafe-type-assertion": "off",
+    "typescript/no-unsafe-member-access": "off",
+    "typescript/no-confusing-void-expression": "off",
+    "typescript/no-unsafe-assignment": "off",
+    "typescript/no-misused-promises": "off",
+    "typescript/return-await": ["error", "always"],
+    "typescript/require-await": "off",
+    "typescript/switch-exhaustiveness-check": "off",
+    "typescript/ban-ts-comment": "off",
     "no-unused-vars": [
       "error",
       {
@@ -201,7 +203,7 @@
         "builtinGlobals": false
       }
     ],
-    "@typescript-eslint/only-throw-error": "off",
+    "typescript/only-throw-error": "off",
     "no-unused-expressions": [
       "error",
       {
@@ -210,10 +212,10 @@
         "allowTaggedTemplates": true
       }
     ],
-    "@typescript-eslint/adjacent-overload-signatures": "error",
-    "@typescript-eslint/consistent-type-definitions": "error",
-    "@typescript-eslint/consistent-type-imports": "error",
-    "@typescript-eslint/explicit-function-return-type": [
+    "typescript/adjacent-overload-signatures": "error",
+    "typescript/consistent-type-definitions": "error",
+    "typescript/consistent-type-imports": "error",
+    "typescript/explicit-function-return-type": [
       "error",
       {
         "allowExpressions": true,
@@ -222,13 +224,13 @@
         "allowDirectConstAssertionInArrowFunctions": true
       }
     ],
-    "@typescript-eslint/no-extraneous-class": [
+    "typescript/no-extraneous-class": [
       "error",
       {
         "allowWithDecorator": true
       }
     ],
-    "@typescript-eslint/no-floating-promises": [
+    "typescript/no-floating-promises": [
       "error",
       {
         "allowForKnownSafeCalls": [
@@ -240,25 +242,25 @@
         ]
       }
     ],
-    "@typescript-eslint/no-non-null-assertion": "error",
-    "@typescript-eslint/no-this-alias": "error",
-    "@typescript-eslint/no-require-imports": "error",
-    "@typescript-eslint/prefer-function-type": "error",
-    "@typescript-eslint/prefer-find": "error",
-    "@typescript-eslint/prefer-nullish-coalescing": "off",
-    "@typescript-eslint/prefer-readonly": "error",
-    "@typescript-eslint/prefer-reduce-type-parameter": "error",
-    "@typescript-eslint/prefer-return-this-type": "error",
-    "@typescript-eslint/promise-function-async": "error",
-    "@typescript-eslint/require-array-sort-compare": "error",
-    "@typescript-eslint/restrict-plus-operands": [
+    "typescript/no-non-null-assertion": "error",
+    "typescript/no-this-alias": "error",
+    "typescript/no-require-imports": "error",
+    "typescript/prefer-function-type": "error",
+    "typescript/prefer-find": "error",
+    "typescript/prefer-nullish-coalescing": "off",
+    "typescript/prefer-readonly": "error",
+    "typescript/prefer-reduce-type-parameter": "error",
+    "typescript/prefer-return-this-type": "error",
+    "typescript/promise-function-async": "error",
+    "typescript/require-array-sort-compare": "error",
+    "typescript/restrict-plus-operands": [
       "error",
       {
         "skipCompoundAssignments": true
       }
     ],
-    "@typescript-eslint/restrict-template-expressions": "error",
-    "@typescript-eslint/strict-boolean-expressions": [
+    "typescript/restrict-template-expressions": "error",
+    "typescript/strict-boolean-expressions": [
       "error",
       {
         "allowString": false,
