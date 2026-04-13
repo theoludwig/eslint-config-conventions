@@ -175,6 +175,8 @@
     "typescript/require-await": "off",
     "typescript/switch-exhaustiveness-check": "off",
     "typescript/ban-ts-comment": "off",
+    "typescript/prefer-readonly-parameter-types": "off",
+    "typescript/strict-void-return": "off",
     "no-unused-vars": [
       "error",
       {
