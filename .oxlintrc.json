@@ -217,6 +217,7 @@
     "typescript/adjacent-overload-signatures": "error",
     "typescript/consistent-type-definitions": "error",
     "typescript/consistent-type-imports": "error",
+    "typescript/explicit-member-accessibility": "error",
     "typescript/explicit-function-return-type": [
       "error",
       {
